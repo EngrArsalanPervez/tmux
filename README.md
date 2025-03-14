@@ -19,7 +19,7 @@ tmux attach -t mysession
 tmux kill-session -t mysession
 ```
 
-##### Tmux Panes
+##### Tmux Windows
 
 ```bash
 # New Window
@@ -33,4 +33,23 @@ Ctrl + b, then w
 
 # Rename a window
 Ctrl + b, then , (comma)
+```
+
+##### Tmux Panes
+
+```bash
+# Split horizontally
+Ctrl + b, then %
+
+# Split vertically
+Ctrl + b, then "
+
+# Switch between panes
+Ctrl + b, then arrow keys
+
+# Resize panes
+Ctrl + b, then Hold Ctrl + arrow keys
+
+# Close a pane
+Ctrl + d (or exit command in the pane)
 ```
