@@ -42,7 +42,7 @@ Ctrl + b, then , (comma)
 Ctrl + b, then %
 
 # Split vertically
-Ctrl + b, then "
+# Ctrl + b, then "
 
 # Switch between panes
 Ctrl + b, then arrow keys
