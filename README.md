@@ -19,7 +19,7 @@ tmux attach -t mysession
 tmux kill-session -t mysession
 ```
 
-##### Tmux Windows
+##### Tmux Tabs/Windows
 
 ```bash
 # New Window
