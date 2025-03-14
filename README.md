@@ -1,2 +1,6 @@
 # tmux
-Tmux basics
+
+## Start a session
+```bash
+tmux
+```
