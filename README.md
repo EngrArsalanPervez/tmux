@@ -64,6 +64,12 @@ Copy test: Press Ctrl + w
 Paste text: Ctrl + b, then ]
 ```
 
+##### Detach Tmux
+
+```bash
+Ctrl + Shift + b, then d
+```
+
 ##### Kill TMUX Completely
 
 ```bash
