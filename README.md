@@ -60,6 +60,8 @@ tmux source ~/.tmux.conf
 tmux
 ```
 
+### Key Bindings
+
 ##### Tmux Sessions
 
 ```bash
