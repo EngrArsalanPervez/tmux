@@ -23,6 +23,7 @@ git clone -b v2.1.2 https://github.com/catppuccin/tmux.git ~/.config/tmux/plugin
 
 set -g @catppuccin_window_default_text "#W"
 set -g @catppuccin_window_current_text "#W"
+set -g @catppuccin_window_text "#W"
 
 
 # Options to make tmux more pleasant
