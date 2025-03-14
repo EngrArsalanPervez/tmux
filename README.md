@@ -59,7 +59,8 @@ Ctrl + d (or exit command in the pane)
 ```bash
 Enter scroll mode: Ctrl + b, then [
 Scroll with arrow keys
-Copy text: Press Enter after selecting text
+Select text: Press Ctrl + space for selecting text
+Copy test: Press Ctrl + w
 Paste text: Ctrl + b, then ]
 ```
 
