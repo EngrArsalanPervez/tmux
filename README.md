@@ -52,6 +52,14 @@ run ~/.config/tmux/plugins/tmux-plugins/tmux-battery/battery.tmux
 # Or, if using TPM, just run TPM
 ```
 
+### Apply Theme
+
+```bash
+tmux source-file ~/.tmux.conf
+tmux source ~/.tmux.conf
+tmux
+```
+
 ##### Tmux Sessions
 
 ```bash
