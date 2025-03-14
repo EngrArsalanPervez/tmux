@@ -53,3 +53,18 @@ Ctrl + b, then Hold Ctrl + arrow keys
 # Close a pane
 Ctrl + d (or exit command in the pane)
 ```
+
+##### Copy/Paste
+
+```bash
+Enter scroll mode: Ctrl + b, then [
+Scroll with arrow keys
+Copy text: Press Enter after selecting text
+Paste text: Ctrl + b, then ]
+```
+
+##### Kill TMUX Completely
+
+```bash
+tmux kill-server
+```
