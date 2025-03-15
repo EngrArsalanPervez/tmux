@@ -8,6 +8,8 @@ sudo apt install tmux
 
 ### Theme Installation
 
+[catppuccin](https://github.com/catppuccin/tmux)
+
 ```bash
 # Local Terminal theme should be : Gnome Dark
 Theme Source: catppuccin (https://github.com/catppuccin/tmux)
@@ -138,3 +140,7 @@ Ctrl + Shift + b, then d
 ```bash
 tmux kill-server
 ```
+
+##### Cheat Sheet
+
+[Cheat Sheet](https://tmuxcheatsheet.com/)
