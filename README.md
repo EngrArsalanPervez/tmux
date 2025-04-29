@@ -55,6 +55,76 @@ run ~/.config/tmux/plugins/tmux-plugins/tmux-battery/battery.tmux
 # Or, if using TPM, just run TPM
 ```
 
+
+### nano tmux.sh
+
+```bash
+#!/bin/bash
+
+# Name of the tmux session
+SESSION_NAME="eup"
+
+# Check if the session already exists
+tmux has-session -t $SESSION_NAME 2>/dev/null
+
+# If the session doesn't exist, create it
+if [ $? != 0 ]; then
+    # Create the :0 window (tab)
+    tmux new-session -d -s $SESSION_NAME -n "API"
+    tmux send-keys -t $SESSION_NAME:0 "cd /home/vmstat/PACE2/API/pace2_api; ./pace2API" C-m
+
+    # Create the :1 window (tab)
+    tmux new-window -t $SESSION_NAME:1 -n "systemMonitoring"
+    tmux send-keys -t $SESSION_NAME:1 "cd /home/vmstat/PACE2/systemMonitoring; ./main" C-m
+
+    # Create the :2 window (tab)
+    tmux new-window -t $SESSION_NAME:2 -n "netdisco"
+    tmux send-keys -t $SESSION_NAME:2 "su netdisco; cd /home/netdisco/environments/" C-m
+
+    # Create the :3 window (tab)
+    tmux new-window -t $SESSION_NAME:3 -n "dpdk"
+    tmux send-keys -t $SESSION_NAME:3 "cd /root/DPI/dpdk-stable-23.11.1;./usertools/dpdk-devbind.py -s" C-m
+
+    # Create the :4 window (tab)
+    tmux new-window -t $SESSION_NAME:4 -n "git"
+    tmux send-keys -t $SESSION_NAME:4 "cd /root/DPI/pace2_dpdk_dpi" C-m
+
+    # Create the :5 window (tab)
+    tmux new-window -t $SESSION_NAME:5 -n "script"
+    tmux send-keys -t $SESSION_NAME:5 "cd /root/DPI/pace2_dpdk_dpi/examples/l2fwd_dpi/scripts" C-m
+
+    # Create the :6 window (tab)
+    tmux new-window -t $SESSION_NAME:6 -n "pace2"
+    tmux send-keys -t $SESSION_NAME:6 "cd /root/DPI/pace2_dpdk_dpi/examples/l2fwd_dpi/scripts" C-m
+
+    # Create the :7 window (tab)
+    tmux new-window -t $SESSION_NAME:7 -n "monitor"
+    tmux send-keys -t $SESSION_NAME:7 "cd /root/DPI/pace2_dpdk_dpi/examples/l2fwd_dpi/scripts" C-m
+
+    # Create the :8 window (tab)
+    tmux new-window -t $SESSION_NAME:8 -n "htop"
+    tmux send-keys -t $SESSION_NAME:8 "htop" C-m
+
+    # Create the :9 window (tab)
+    tmux new-window -t $SESSION_NAME:9 -n "snmp"
+    tmux send-keys -t $SESSION_NAME:9 "cd /root/DPI/snmp; ./snmp" C-m
+
+    # Create the :10 window (tab)
+    tmux new-window -t $SESSION_NAME:10 -n "bash"
+    tmux send-keys -t $SESSION_NAME:10 "cd" C-m
+
+    # Select the 5 window
+    tmux select-window -t $SESSION_NAME:0
+
+    echo "New tmux session '$SESSION_NAME' created with 3 tabs running different scripts."
+else
+    echo "Session '$SESSION_NAME' already exists. Attaching to it..."
+fi
+
+# Attach to the session
+tmux attach-session -t $SESSION_NAME
+```
+
 ### Apply Theme
 
 ```bash
