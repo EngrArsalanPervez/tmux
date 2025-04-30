@@ -113,7 +113,7 @@ if [ $? != 0 ]; then
     tmux new-window -t $SESSION_NAME:10 -n "bash"
     tmux send-keys -t $SESSION_NAME:10 "cd" C-m
 
-    # Select the 5 window
+    # Select the 0 window
     tmux select-window -t $SESSION_NAME:0
 
     echo "New tmux session '$SESSION_NAME' created with 3 tabs running different scripts."
