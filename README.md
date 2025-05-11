@@ -113,6 +113,10 @@ if [ $? != 0 ]; then
     tmux new-window -t $SESSION_NAME:10 -n "bash"
     tmux send-keys -t $SESSION_NAME:10 "cd" C-m
 
+    # Create the :11 window (tab)
+    tmux new-window -t $SESSION_NAME:11 -n "primary"
+    tmux send-keys -t $SESSION_NAME:11 "sshpass -p '*****' ssh -o StrictHostKeyChecking=accept-new user@X.X.X.X -p X" C-m
+
     # Select the 0 window
     tmux select-window -t $SESSION_NAME:0
 
