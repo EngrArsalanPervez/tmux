@@ -6,6 +6,15 @@
 sudo apt install tmux
 ```
 
+### Minimal ~/.tmux.conf
+
+```bash
+setw -g mouse on 
+set-option -ga terminal-overrides ",xterm-256color:Tc"
+set -g default-terminal "xterm-256color"
+```
+
+
 ### Theme Installation
 
 [catppuccin](https://github.com/catppuccin/tmux)
@@ -17,15 +26,6 @@ Theme Source: catppuccin (https://github.com/catppuccin/tmux)
 mkdir -p ~/.config/tmux/plugins/catppuccin
 git clone -b v2.1.2 https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin/tmux
 ```
-
-### Minimal ~/.tmux.conf
-
-```bash
-setw -g mouse on 
-set-option -ga terminal-overrides ",xterm-256color:Tc"
-set -g default-terminal "xterm-256color"
-```
-
 
 ### ~/.tmux.conf
 
