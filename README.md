@@ -14,6 +14,19 @@ set-option -ga terminal-overrides ",xterm-256color:Tc"
 set -g default-terminal "xterm-256color"
 ```
 
+### Themes
+
+```bash
+# Ubuntu
+mkdir -p ${XDG_DATA_HOME:-$HOME/.local/share}/warp-terminal
+cd ${XDG_DATA_HOME:-$HOME/.local/share}/warp-terminal/
+git clone https://github.com/warpdotdev/themes.git
+
+# Windows
+New-Item -Path "$env:APPDATA\warp\Warp\data\" -ItemType Directory
+Set-Location -Path $env:APPDATA\warp\Warp\data\
+git clone https://github.com/warpdotdev/themes.git
+```
 
 ### Theme Installation
 
