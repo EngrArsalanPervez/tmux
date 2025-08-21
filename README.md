@@ -33,6 +33,7 @@ git clone https://github.com/warpdotdev/themes.git
 ```bash
 mkdir -p ~/.config/tmux/plugins/tmux-plugins
 git clone https://github.com/tmux-plugins/tmux-cpu ~/.config/tmux/plugins/tmux-plugins/tmux-cpu
+git clone https://github.com/tmux-plugins/tmux-battery ~/.config/tmux/plugins/tmux-plugins/tmux-battery
 ```
 
 ### Theme Installation
