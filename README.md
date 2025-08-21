@@ -28,6 +28,13 @@ Set-Location -Path $env:APPDATA\warp\Warp\data\
 git clone https://github.com/warpdotdev/themes.git
 ```
 
+### Plugins
+
+```bash
+mkdir -p ~/.config/tmux/plugins/tmux-plugins
+git clone https://github.com/tmux-plugins/tmux-cpu ~/.config/tmux/plugins/tmux-plugins/tmux-cpu
+```
+
 ### Theme Installation
 
 [catppuccin](https://github.com/catppuccin/tmux)
