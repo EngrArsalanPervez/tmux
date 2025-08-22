@@ -59,8 +59,12 @@ set -g @catppuccin_window_text "#W"
 
 
 # Options to make tmux more pleasant
-set -g mouse on
+set -g mouse off
 set -g default-terminal "tmux-256color"
+
+# Enable truecolor support
+set-option -ga terminal-overrides ",xterm-256color:Tc"
+
 
 # Configure the catppuccin plugin
 set -g @catppuccin_flavor "mocha"
