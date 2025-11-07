@@ -60,6 +60,8 @@ set -g @catppuccin_window_text "#W"
 
 # Options to make tmux more pleasant
 set -g mouse on
+bind -n C-Left previous-window
+bind -n C-Right next-window
 
 # NVIM
 set-option -g focus-events on
