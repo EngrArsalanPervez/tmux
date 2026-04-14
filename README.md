@@ -68,8 +68,8 @@ set-option -g focus-events on
 
 # Enable truecolor support
 # (outside tmux) echo $TERM => alacritty 
-#set-option -a terminal-features 'alacritty:RGB'
-set-option -a terminal-features 'xterm-256color:RGB'
+set-option -a terminal-features 'alacritty:RGB'
+#set-option -a terminal-features 'xterm-256color:RGB'
 
 # Configure the catppuccin plugin
 set -g @catppuccin_flavor "mocha"
