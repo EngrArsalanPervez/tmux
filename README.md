@@ -6,14 +6,6 @@
 sudo apt install tmux
 ```
 
-### Minimal ~/.tmux.conf
-
-```bash
-setw -g mouse on 
-set-option -ga terminal-overrides ",xterm-256color:Tc"
-set -g default-terminal "xterm-256color"
-```
-
 ### Themes
 
 ```bash
@@ -42,13 +34,21 @@ git clone https://github.com/tmux-plugins/tmux-battery ~/.config/tmux/plugins/tm
 
 ```bash
 # Local Terminal theme should be : Gnome Dark
-Theme Source: catppuccin (https://github.com/catppuccin/tmux)
+# Theme Source: catppuccin (https://github.com/catppuccin/tmux)
 
 mkdir -p ~/.config/tmux/plugins/catppuccin
 git clone -b v2.1.2 https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin/tmux
 ```
 
-### ~/.tmux.conf
+### Minimal ~/.tmux.conf
+
+```bash
+setw -g mouse on 
+set-option -ga terminal-overrides ",xterm-256color:Tc"
+set -g default-terminal "xterm-256color"
+```
+
+### Standard ~/.tmux.conf
 
 ```bash
 # ~/.tmux.conf
